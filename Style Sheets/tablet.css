@@ -1,0 +1,30 @@
+/* prjcts{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 25px;
+}
+
+#prjcts .prjcts{
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+}
+
+#prjcts .prjcts .prjctitem{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin-top: 30px;
+    overflow: hidden;
+    border-radius: 15px;
+    position: relative;
+    z-index: 1;
+} */

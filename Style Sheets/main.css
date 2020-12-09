@@ -1,0 +1,692 @@
+/* Overall page CSS */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #d7d2d2;
+}
+
+p{
+    line-height: 1.9rem;
+    font-size: 1.1rem;
+    /* text-align: justify; */
+}
+
+.title{
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    letter-spacing: 0.05rem;
+}
+
+.title span{
+    color: rgb(192, 65, 65);
+}
+
+/* .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+} */
+
+/* Header section */
+#nav{
+    z-index: 6;
+    background-color: black;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px 30px;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+#nav .myself p{
+    min-width: 200px;
+    color: transparent;
+    animation: navanm 0.8s ease 3.4s 1 forwards;
+    /* font-size: 1.6rem; */
+}
+
+#nav .myself p span{
+    animation: navanm1 0.8s ease 3.4s 1 forwards;
+    color: transparent;
+}
+
+#nav .navbar{
+    width: 80%;
+}
+
+#nav .navbar ul{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+
+#nav .navbar ul li{
+    display: inline;
+    list-style: none;
+    margin: 0px 10px;
+    padding: 10px 40px;
+    border-radius: 15px;
+    transition: all 0.8s ease 0s;
+}
+
+#nav .navbar ul li a{
+    animation: navanm 0.8s ease 3.4s 1 forwards;
+    text-decoration: none;
+    color: transparent;
+    font-size: 1.3rem;
+}
+
+#nav .navbar ul li:hover{
+    background-color: rgb(211, 102, 102);
+    cursor: pointer;
+}
+
+/* End Header section */
+
+/* Intro section */
+#intro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: url('../Images/bg2.jpg') no-repeat top center/cover;
+    z-index: 1;
+    position: relative;
+    /* flex-direction: column; */
+}
+#intro .introcontent{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    max-width: 1300px;
+    margin-left: 50px;
+    margin-right: 50px;
+    /* z-index: 1; */
+}
+
+#intro .introcontent h3{
+    font-size: 2rem;
+    line-height: 2.5rem;
+    letter-spacing: 0.05rem;
+    color: transparent;
+    position: relative;
+    animation: headingtxtanm 0.5s ease-in 1s 1 forwards;
+    /* transition: all 1s ease-in 0s; */
+    /* font-weight: 900; */
+}
+
+#intro .introcontent h3:nth-child(1){
+    animation-delay: 1s;
+}
+#intro .introcontent h3:nth-child(2){
+    animation-delay: 2s;
+}
+#intro .introcontent h3:nth-child(3){
+    animation-delay: 3s;
+    animation: headingnameanm 0.5s ease-in 3s 1 forwards;
+    /* font-weight: 900; */
+}
+
+#intro .introcontent h3 span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background-color: grey;
+    animation: headinganm 0.5s ease-in 0.5s 1 forwards;
+    /* transition: all 0.1s ease-in 0s; */
+}
+
+#intro .introcontent h3 .name{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background-color: crimson;
+    animation: headinganm 0.5s ease-in 0.5s 1 forwards;
+    /* transition: all 0.1s ease-in 0s; */
+}
+
+#intro .introcontent h3:nth-child(1) span{
+    animation-delay: 0.5s;
+}
+#intro .introcontent h3:nth-child(2) span{
+    animation-delay: 1.5s;
+}
+#intro .introcontent h3:nth-child(3) span{
+    animation-delay: 2.5s;
+}
+
+#intro .introcontent p{
+    margin-top: 15px;
+    color: transparent;
+    animation: intropara 0.8s ease 3.4s 1 forwards;
+    /* letter-spacing: 0.1rem; */
+}
+
+#intro .introcontent .btn{
+    margin-top: 15px;
+    margin-left: 15px;
+    padding: 5px 30px;
+    font-weight: 900;
+    font-size: 1.2rem;
+    letter-spacing: 0.2rem;
+    background-color: transparent;
+    color: transparent;
+    border-color: transparent;
+    /* border-radius: 10px; */
+    animation: introbtn 1s ease 3.4s 1 forwards;
+}
+#intro .introcontent .btn a{
+    /* background-color: transparent; */
+    color: transparent;
+    text-decoration: none;
+    animation: introbtn 1s ease 3.4s 1 forwards;
+}
+
+#intro .introcontent .btn:hover{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: all 0.5s ease 0s;
+}
+
+#intro::after{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+/* End Intro section */
+
+/* My Achievements section */
+#achvmnts{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    /* height: 100vh; */
+    /* max-width: 85vw; */
+    padding-top: 150px;
+}
+
+#achvmnts .achvmnts{
+    width: 85vw;
+    margin: 30px 0px;
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+}
+
+#achvmnts .achvmnts .up, #achvmnts .achvmnts .down{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+} 
+
+#achvmnts .achvmnts .allmine{
+    /* flex-basis: 80%; */
+    margin: 30px 0px;
+    width: 40%;
+    position: relative;
+    background: url("../Images/bg1.jpg") no-repeat center center/cover;
+    z-index: 1;
+    padding: 20px 30px;
+    color: whitesmoke;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: all 1s ease 0s;
+}
+
+#achvmnts .achvmnts .allmine:hover{
+    transform: scale(1.2);
+}
+
+#achvmnts .achvmnts .allmine img{
+    display: block;
+    width: 60px;
+    height: 60px;
+    margin: auto;
+    /* margin-bottom: 10px; */
+}
+
+#achvmnts .achvmnts .allmine h3{
+    margin: 10px 0px;
+    letter-spacing: 0.1rem;
+    font-size: 1.8rem;
+}
+
+#achvmnts .achvmnts .allmine::after{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+/* End My Achievements section */
+
+/* My Projects section  */
+#prjcts{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-top: 150px;
+}
+
+#prjcts .prjcts{
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* width: 80vw; */
+    margin-top: 80px;
+}
+
+#prjcts .prjcts .prjctitem:nth-child(odd){
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 400px;
+    overflow: hidden;
+    /* border-radius: 15px; */
+    position: relative;
+    z-index: 1;
+}
+
+#prjcts .prjcts .prjctitem:nth-child(even){
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 400px;
+    overflow: hidden;
+    /* border-radius: 15px; */
+    position: relative;
+    z-index: 1;
+}
+
+#prjcts .prjcts .prjctitem::after {
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    opacity: 0.4;
+}
+
+#prjcts .prjcts .prjctitem .projectinfo{
+    height: 100%;
+    width: 50%;
+    background-color: #3a3636;
+    padding: 0px 0px;
+    z-index: 5;
+}
+
+#prjcts .prjcts .prjctitem .projectinfo .infocontent{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    margin-left: 50px;
+}
+
+#prjcts .prjcts .prjctitem .projectinfo .infocontent h3{
+    font-size: 2rem;
+    display: inline;
+    /* margin-bottom: 15px; */
+}
+
+#prjcts .prjcts .prjctitem .projectinfo .infocontent h4{
+    font-size: 1.5rem;
+    display: inline;
+    /* margin-left: 18px; */
+}
+
+#prjcts .prjcts .prjctitem .projectinfo .infocontent p{
+    margin-top: 8px;
+}
+
+#prjcts .prjcts .prjctitem .projecteffect{
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#prjcts .prjcts .prjctitem .projecteffect img{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#prjcts .prjcts .prjctitem .projecteffect img{
+    z-index: 1;
+    transition: transform 0.5s ease 0s;
+}
+
+
+#prjcts .prjcts .prjctitem:hover .projecteffect img{
+    transform: scale(1.2);
+}
+
+/* End My Projects section  */
+
+/* About me section */
+#abtme{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* padding-top: 150px; */
+    margin-top: 100px;
+    height: 100vh;
+    width: 100%;
+}
+
+#abtme .abtme{
+    margin-top: 40px;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+#abtme .abtme .mypic{
+    margin: 30px 0px;
+    border-radius: 20px;
+}
+
+#abtme .abtme .mypic img{
+    height: 300px;
+    width: 250px;
+    border-radius: 20px;
+    transition: all 0.5s ease 0s;
+    /* box-shadow:) -10px 10px 25px 10px; */
+}
+
+#abtme .abtme:hover .mypic img{
+    transform: scale(1.2);
+    box-shadow:  rgb(172, 37, 64) -2px 2px 15px 5px;
+}
+
+#abtme .abtme .right{
+    margin-left: 60px;
+    height: 300px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+#abtme .abtme .myself .brief{
+    margin-top: 10px;
+}
+
+#abtme .abtme .right .myself h3{
+    font-size: 1.4rem;
+}
+
+#abtme .abtme .right .myself h3 p{
+    font-size: 1rem;
+    margin-top: -5px;
+}
+
+#abtme .abtme button{
+    color: rgb(0, 0, 0);
+    border: 2px solid rgb(0, 0, 0);
+    background-color: transparent;
+    /* margin-top: 10px; */
+    /* margin-left: 0px; */
+    padding: 5px 10px;
+    font-weight: 900;
+    font-size: 1rem;
+    transition: transform 0.5s ease
+    0s;
+}
+
+#abtme .abtme button:hover{
+    color: white;
+    border-color: rgb(172, 37, 64);
+    background-color: rgb(172, 37, 64);
+    transform: scale(1.1);
+}
+
+/* End About me section */
+
+/* Contact me section */
+#contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* margin-top: 10px; */
+    width: 100%;
+    height: 100vh;
+    /* padding-top: 150px; */
+}
+
+#contact .contactcontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 100px;
+}
+
+#contact .contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* margin-top: 50px; */
+    margin: 10px 15px;
+    padding: 0px 0px;
+    border-radius: 20px;
+    height: 200px;
+    width: 450px;
+    color: whitesmoke;
+    background-color: grey;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: all 0.5s ease 0s;
+}
+
+#contact .contact p{
+    font-size: 1rem;
+}
+
+#contact .contact::after{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+#contact .contact .icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+#contact .contact .icon p{
+    margin-left: 10px;
+    font-size: 1.4rem;
+}
+
+#contact .contact .icon img{
+    width: 60px;
+    height: 60px;
+}
+
+#contact .contact:hover{
+    transform: scale(1.08);
+    cursor: pointer;
+    /* box-shadow: rgb(94, 75, 79) -5px 5px 10px 10px; */
+}
+/* End Contact me section */
+
+/* Footer section */
+#foot{
+    margin-top: 50px;
+    background-color: rgb(71, 59, 59);
+    color: whitesmoke;
+}
+#foot .foot{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+#foot .foot .cpy{
+    margin-top: 20px;
+    margin-bottom: 8px;
+}
+
+#foot .foot .socialmedia{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 15px 0px;
+    background-color: crimson;
+}
+
+#foot .foot .socialmedia div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 150px;
+    height: auto;
+    transition: all 0.5s ease 0s;
+}
+
+#foot .foot .socialmedia div a img{
+    width: 60px;
+    height: 60px;
+}
+
+#foot .foot .socialmedia div a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+#foot .foot .socialmedia div:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    background-color: rgb(245, 70, 105);
+    border-radius: 15px;
+}
+
+/* End Footer section */
+
+/* Keyframes */
+
+@keyframes navanm{
+    100%{
+        color: whitesmoke;
+    }
+}
+
+@keyframes navanm1{
+    100%{
+        color: rgb(192, 65, 65);
+    }
+}
+
+
+@keyframes headinganm{
+    50%{
+        left: 0%;
+        width: 100%;
+    }
+    100%{
+        left: 100%;
+        width: 0%;
+        
+    }
+}
+
+@keyframes headingtxtanm{
+    0%{
+        color: transparent;
+    }
+    100%{
+        color: whitesmoke;
+    }
+}
+
+@keyframes headingnameanm{
+    0%{
+        color: transparent;
+    }
+    100%{
+        color: red;
+    }
+}
+
+@keyframes intropara{
+    100%{
+        color: whitesmoke;
+    }
+}
+
+@keyframes introbtn{
+    100%{
+        color: whitesmoke;
+        /* border: 2px solid white; */
+    }
+}
+
+/* End Keyframes */
